@@ -1,0 +1,678 @@
+/* PAGE */
+.scanner-page {
+    margin: 0;
+    min-height: 100vh;
+    background: #080d14;
+    color: #f1f5f9;
+    font-family: Arial, sans-serif;
+}
+
+/* TOP NAVBAR */
+.scanner-navbar {
+    width: 100%;
+    min-height: 85px;
+    padding: 0 6%;
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: #111927;
+    border-bottom: 1px solid #263449;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+.scanner-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.brand-shield {
+    font-size: 32px;
+}
+
+.scanner-brand h1 {
+    margin: 0;
+    font-size: 30px;
+    color: #00ffae;
+    font-weight: bold;
+}
+
+.scanner-brand h1 span {
+    color: white;
+}
+
+/* NAV BUTTONS */
+.scanner-nav-links {
+    display: flex;
+    gap: 15px;
+}
+
+.scanner-nav-links button {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.nav-dashboard {
+    background: #00ffae;
+    color: #07111b;
+}
+
+.nav-logout {
+    background: #263449;
+    color: white;
+}
+
+.scanner-nav-links button:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+/* MAIN CONTENT */
+.scanner-main {
+    width: 90%;
+    max-width: 1100px;
+    margin: 45px auto;
+}
+
+/* HEADING */
+.scanner-heading {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.scanner-icon {
+    font-size: 45px;
+}
+
+.scanner-heading h2 {
+    font-size: 34px;
+    color: #00ffae;
+    margin: 15px 0;
+}
+
+.scanner-heading p {
+    color: #94a3b8;
+    font-size: 16px;
+}
+
+/* INPUT CARD */
+.scanner-input-card {
+    background: #111927;
+    border: 1px solid #263449;
+    border-radius: 16px;
+    padding: 30px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+
+.scanner-input-card label {
+    display: block;
+    color: #e2e8f0;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.scanner-input-row {
+    display: flex;
+    gap: 15px;
+}
+
+.scanner-input-row input {
+    flex: 1;
+    min-width: 0;
+    padding: 16px;
+    box-sizing: border-box;
+
+    background: #202c3d;
+    border: 1px solid #34445c;
+    border-radius: 9px;
+
+    color: white;
+    font-size: 16px;
+    outline: none;
+}
+
+.scanner-input-row input:focus {
+    border-color: #00ffae;
+}
+
+.scanner-input-row button {
+    min-width: 150px;
+    padding: 15px 25px;
+
+    background: #00ffae;
+    color: #06111b;
+
+    border: none;
+    border-radius: 9px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.scanner-input-row button:hover {
+    background: #00dfa0;
+}
+
+.scanner-input-row button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.scanner-note {
+    margin-top: 18px;
+    color: #94a3b8;
+    font-size: 13px;
+}
+
+/* RESULTS */
+.scanner-result {
+    background: #111927;
+    border: 1px solid #263449;
+    border-radius: 16px;
+    padding: 30px;
+    box-sizing: border-box;
+
+    text-align: center;
+    color: #e2e8f0;
+    overflow-wrap: anywhere;
+}
+
+.scanner-result:empty {
+    display: none;
+}
+
+.scanner-result h2 {
+    color: #00ffae;
+}
+
+.scanner-result h3 {
+    color: #00ffae;
+}
+
+.scanner-result hr {
+    border: none;
+    border-top: 1px solid #34445c;
+    margin: 25px 0;
+}
+
+.scanner-result p {
+    line-height: 1.7;
+}
+
+.scanner-result ul {
+    display: inline-block;
+    text-align: left;
+}
+
+/* RISK METER */
+.risk-meter-container {
+    width: 100%;
+    max-width: 500px;
+    margin: 25px auto;
+    padding: 25px;
+
+    background: #0b1220;
+    border: 1px solid #263449;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+
+.risk-meter-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.risk-meter-header h3 {
+    margin: 0;
+}
+
+.risk-meter-header span {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.risk-meter-track {
+    width: 100%;
+    height: 14px;
+    margin: 20px 0;
+
+    background: #263449;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.risk-meter-fill {
+    height: 100%;
+    border-radius: 20px;
+    transition: width 1s ease;
+}
+
+.risk-meter-label {
+    color: #94a3b8;
+    font-size: 14px;
+}
+
+/* FOOTER */
+.scanner-footer {
+    text-align: center;
+    padding: 25px;
+    color: #64748b;
+    font-size: 13px;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 600px) {
+
+    .scanner-navbar {
+        padding: 15px 5%;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .scanner-brand h1 {
+        font-size: 24px;
+    }
+
+    .scanner-nav-links {
+        gap: 8px;
+    }
+
+    .scanner-nav-links button {
+        padding: 10px 14px;
+    }
+
+    .scanner-main {
+        width: 92%;
+        margin: 30px auto;
+    }
+
+    .scanner-heading h2 {
+        font-size: 26px;
+    }
+
+    .scanner-input-card,
+    .scanner-result {
+        padding: 20px;
+    }
+
+    .scanner-input-row {
+        flex-direction: column;
+    }
+
+    .scanner-input-row button {
+        width: 100%;
+    }
+}
+
+/* FIX: URL SCANNER LAYOUT ALIGNMENT */
+
+.scanner-page {
+    display: block !important;
+    width: 100% !important;
+    min-height: 100vh;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* Navbar stays at the top */
+.scanner-navbar {
+    position: relative !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    margin: 0 !important;
+}
+
+/* Main scanner stays centered */
+.scanner-main {
+    display: block !important;
+    width: 90% !important;
+    max-width: 1100px !important;
+    margin: 45px auto !important;
+}
+
+/* Center heading */
+.scanner-heading {
+    display: block !important;
+    width: 100% !important;
+    text-align: center !important;
+}
+
+/* Input row */
+.scanner-input-row {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: stretch !important;
+    width: 100% !important;
+    gap: 15px !important;
+}
+
+.scanner-input-row input {
+    display: block !important;
+    flex: 1 1 auto !important;
+    width: 0 !important;
+    min-width: 0 !important;
+    height: 55px !important;
+}
+
+.scanner-input-row button {
+    display: block !important;
+    flex: 0 0 160px !important;
+    width: 160px !important;
+    min-width: 160px !important;
+    height: 55px !important;
+}
+
+/* Result panel */
+.scanner-result {
+    display: block;
+    width: 100% !important;
+    margin: 25px auto !important;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .scanner-input-row {
+        flex-direction: column !important;
+    }
+
+    .scanner-input-row input,
+    .scanner-input-row button {
+        width: 100% !important;
+        flex: 1 1 auto !important;
+    }
+}
+
+/* =========================================
+   KAVACHX PREMIUM CYBER UI
+========================================= */
+
+.scanner-page {
+    background:
+        radial-gradient(ellipse at top, #10263a 0%, #080d16 48%, #05080e 100%) !important;
+    color: #eaf2ff;
+}
+
+/* NAVBAR */
+.scanner-navbar {
+    background: rgba(9, 18, 31, 0.92) !important;
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(0, 255, 174, 0.15) !important;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+}
+
+.scanner-brand h1 {
+    letter-spacing: 1px;
+    text-shadow: 0 0 18px rgba(0, 255, 174, 0.25);
+}
+
+.brand-shield {
+    filter: drop-shadow(0 0 10px rgba(0, 255, 174, 0.35));
+}
+
+/* NAV BUTTONS */
+.nav-dashboard {
+    box-shadow: 0 0 15px rgba(0, 255, 174, 0.15);
+}
+
+.nav-logout {
+    border: 1px solid #334155 !important;
+}
+
+.scanner-nav-links button {
+    transition: all 0.25s ease;
+}
+
+.scanner-nav-links button:hover {
+    box-shadow: 0 0 18px rgba(0, 255, 174, 0.25);
+}
+
+/* MAIN HEADING */
+.scanner-main {
+    max-width: 1150px !important;
+}
+
+.scanner-icon {
+    width: 82px;
+    height: 82px;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(0, 255, 174, 0.07);
+    border: 1px solid rgba(0, 255, 174, 0.2);
+    border-radius: 24px;
+
+    box-shadow: 0 0 35px rgba(0, 255, 174, 0.08);
+}
+
+.scanner-heading h2 {
+    font-size: clamp(28px, 4vw, 42px) !important;
+    letter-spacing: -1px;
+    text-shadow: 0 0 25px rgba(0, 255, 174, 0.12);
+}
+
+.scanner-heading p {
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+/* SCANNER CARD */
+.scanner-input-card {
+    background: linear-gradient(
+        145deg,
+        rgba(18, 32, 49, 0.96),
+        rgba(10, 18, 30, 0.96)
+    ) !important;
+
+    border: 1px solid rgba(0, 255, 174, 0.16) !important;
+    border-radius: 22px !important;
+
+    padding: 35px !important;
+
+    box-shadow:
+        0 20px 60px rgba(0, 0, 0, 0.3),
+        inset 0 1px 0 rgba(255, 255, 255, 0.025);
+
+    transition: border-color 0.3s ease;
+}
+
+.scanner-input-card:hover {
+    border-color: rgba(0, 255, 174, 0.3) !important;
+}
+
+.scanner-input-card label {
+    font-size: 15px;
+    letter-spacing: 0.3px;
+}
+
+/* URL INPUT */
+.scanner-input-row input {
+    height: 60px !important;
+    background: #080f1b !important;
+
+    border: 1px solid #293b50 !important;
+    border-radius: 12px !important;
+
+    padding: 0 20px !important;
+    color: #eaf2ff !important;
+
+    transition: all 0.3s ease;
+}
+
+.scanner-input-row input::placeholder {
+    color: #64748b;
+}
+
+.scanner-input-row input:focus {
+    border-color: #00ffae !important;
+
+    box-shadow:
+        0 0 0 3px rgba(0, 255, 174, 0.07),
+        0 0 20px rgba(0, 255, 174, 0.06);
+}
+
+/* SCAN BUTTON */
+.scanner-input-row button {
+    height: 60px !important;
+
+    background: linear-gradient(
+        135deg,
+        #00ffae,
+        #00d995
+    ) !important;
+
+    color: #03110c !important;
+
+    border: none !important;
+    border-radius: 12px !important;
+
+    font-size: 15px;
+    font-weight: 800;
+    letter-spacing: 0.3px;
+
+    box-shadow: 0 0 22px rgba(0, 255, 174, 0.12);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        background 0.25s ease;
+}
+
+.scanner-input-row button:hover {
+    transform: translateY(-2px) !important;
+
+    box-shadow:
+        0 0 30px rgba(0, 255, 174, 0.3),
+        0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.scanner-input-row button:active {
+    transform: scale(0.98) !important;
+}
+
+.scanner-input-row button:disabled {
+    opacity: 0.55;
+    box-shadow: none;
+}
+
+/* SCANNER NOTE */
+.scanner-note {
+    color: #8193aa !important;
+    letter-spacing: 0.2px;
+}
+
+/* RESULT CARD */
+.scanner-result {
+    background: linear-gradient(
+        145deg,
+        rgba(16, 29, 45, 0.98),
+        rgba(8, 15, 26, 0.98)
+    ) !important;
+
+    border: 1px solid rgba(0, 255, 174, 0.15) !important;
+    border-radius: 22px !important;
+
+    padding: 35px !important;
+
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+    animation: resultAppear 0.45s ease;
+}
+
+.scanner-result h2 {
+    font-size: 32px;
+}
+
+.scanner-result h3 {
+    letter-spacing: 0.3px;
+}
+
+.scanner-result p {
+    color: #b9c8da;
+}
+
+.scanner-result hr {
+    border-color: rgba(148, 163, 184, 0.15) !important;
+}
+
+/* RISK METER CARD */
+.risk-meter-container {
+    background: #080f1b !important;
+
+    border: 1px solid rgba(0, 255, 174, 0.12) !important;
+    border-radius: 18px !important;
+
+    padding: 30px !important;
+
+    box-shadow: inset 0 0 30px rgba(0, 255, 174, 0.015);
+}
+
+.risk-meter-header span {
+    text-shadow: 0 0 15px currentColor;
+}
+
+.risk-meter-track {
+    height: 16px !important;
+    background: #1c2b3e !important;
+    border: 1px solid #2a3a4f;
+}
+
+.risk-meter-fill {
+    box-shadow: 0 0 15px currentColor;
+}
+
+.risk-meter-label {
+    letter-spacing: 0.5px;
+}
+
+/* FINDINGS */
+.scanner-result ul {
+    color: #b9c8da;
+    line-height: 2;
+}
+
+/* FOOTER */
+.scanner-footer {
+    border-top: 1px solid rgba(0, 255, 174, 0.07);
+    background: rgba(5, 10, 17, 0.5);
+}
+
+/* ANIMATION */
+@keyframes resultAppear {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+    .scanner-input-card,
+    .scanner-result {
+        padding: 22px !important;
+        border-radius: 16px !important;
+    }
+
+    .scanner-heading h2 {
+        font-size: 28px !important;
+    }
+
+    .risk-meter-container {
+        padding: 20px !important;
+    }
+}

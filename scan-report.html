@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KavachX | Scan Report</title>
+    <link rel="stylesheet" href="scan-report.css">
+</head>
+<body>
+
+<header class="header">
+    <h1>🛡️ KavachX</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="scan-history.html">Scan History</a>
+    </nav>
+</header>
+
+<main class="container">
+
+    <a class="back-link" href="scan-history.html">← Back to Scan History</a>
+
+    <section class="heading">
+        <h2>Detailed URL Scan Report</h2>
+        <p>Security indicators detected during the URL scan.</p>
+    </section>
+
+    <section class="report-card">
+
+        <div class="report-top">
+            <div>
+                <p class="label">Scanned URL</p>
+                <h3 id="scannedUrl">Loading...</h3>
+            </div>
+
+            <span id="statusBadge" class="status">Loading</span>
+        </div>
+
+        <div class="score-section">
+            <div class="score-circle" id="scoreCircle">
+                <div>
+                    <span id="riskScore">0</span>
+                    <small>/100</small>
+                </div>
+            </div>
+
+            <div>
+                <h3 id="riskTitle">Analyzing Risk</h3>
+                <p id="riskDescription">
+                    Loading scan information...
+                </p>
+            </div>
+        </div>
+
+        <div class="meter">
+            <div id="riskMeter"></div>
+        </div>
+
+        <p class="scan-date">
+            Scan Date: <span id="scanDate">N/A</span>
+        </p>
+
+    </section>
+
+    <section class="report-card">
+        <h2>Security Indicators</h2>
+
+        <div class="indicator-grid">
+
+            <div class="indicator">
+                <span>HTTPS Enabled</span>
+                <strong id="httpsStatus">N/A</strong>
+            </div>
+
+            <div class="indicator">
+                <span>IP Address Detected</span>
+                <strong id="ipStatus">N/A</strong>
+            </div>
+
+            <div class="indicator">
+                <span>Suspicious Keyword Detected</span>
+                <strong id="keywordStatus">N/A</strong>
+            </div>
+
+            <div class="indicator">
+                <span>Long URL Detected</span>
+                <strong id="longUrlStatus">N/A</strong>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="report-card">
+        <h2>Scan Findings</h2>
+        <ul id="findingsList">
+            <li>Loading findings...</li>
+        </ul>
+    </section>
+
+    <p class="disclaimer">
+        Note: This report uses configured heuristic indicators for a
+        demonstration. It does not guarantee that a URL is safe or malicious.
+    </p>
+
+</main>
+
+<script src="scan-report.js"></script>
+
+</body>
+</html>

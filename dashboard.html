@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>KavachX | Dashboard</title>
+
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+
+<body class="dashboard-page">
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+
+        <div class="brand">
+            <div class="brand-shield">🛡️</div>
+            <h1><span>Kavach</span>X</h1>
+        </div>
+
+        <div class="nav-actions">
+            <button class="dashboard-nav-btn active">
+                Dashboard
+            </button>
+
+            <button class="logout-nav-btn" onclick="logout()">
+                Logout
+            </button>
+        </div>
+
+    </header>
+
+
+    <!-- MAIN DASHBOARD -->
+    <main class="dashboard-container">
+
+        <!-- WELCOME SECTION -->
+        <section class="welcome-section">
+
+            <div class="welcome-icon">
+                🛡️
+            </div>
+
+            <h2>Welcome to <span>KavachX</span></h2>
+
+            <p>
+                Your intelligent cybersecurity platform.
+                Detect suspicious links, identify digital threats
+                and protect yourself online.
+            </p>
+
+        </section>
+
+
+        <!-- SECURITY STATUS -->
+        <section class="security-status">
+
+            <div class="status-indicator"></div>
+
+            <div>
+                <h3>Security System Active</h3>
+                <p>KavachX protection interface is ready.</p>
+            </div>
+
+        </section>
+
+
+        <!-- MODULES -->
+        <section class="modules-section">
+
+            <div class="section-heading">
+                <h2>Security <span>Modules</span></h2>
+
+                <p>Choose a security tool to get started</p>
+            </div>
+
+
+            <div class="modules-grid">
+
+                <!-- URL SCANNER -->
+                <div class="module-card">
+
+                    <div class="module-icon green-icon">
+                        🔗
+                    </div>
+
+                    <div class="module-status available">
+                        AVAILABLE
+                    </div>
+
+                    <h3>URL Security Scanner</h3>
+
+                    <p>
+                        Analyze suspicious URLs, detect phishing
+                        indicators and identify potential online threats.
+                    </p>
+
+                    <button class="module-button"
+                            onclick="openURLScanner()">
+                        Scan URL <span>→</span>
+                    </button>
+
+                </div>
+
+
+                <!-- MESSAGE DETECTION -->
+                <div class="module-card">
+
+                    <div class="module-icon purple-icon">
+                        ✉️
+                    </div>
+
+                    <div class="module-status coming">
+                        COMING SOON
+                    </div>
+
+                    <h3>Fake Message Detection</h3>
+
+                    <p>
+                        Detect scam messages, suspicious texts
+                        and social engineering attempts.
+                    </p>
+
+                    <button class="module-button disabled"
+                            disabled>
+                        Under Development
+                    </button>
+
+                </div>
+
+
+                <!-- PAYMENT FRAUD -->
+                <div class="module-card">
+
+                    <div class="module-icon blue-icon">
+                        💳
+                    </div>
+
+                    <div class="module-status coming">
+                        COMING SOON
+                    </div>
+
+                    <h3>Payment Fraud Detection</h3>
+
+                    <p>
+                        Identify suspicious payment activities
+                        and potential digital transaction fraud.
+                    </p>
+
+                    <button class="module-button disabled"
+                            disabled>
+                        Under Development
+                    </button>
+
+                </div>
+
+
+                <!-- DEEPFAKE -->
+                <div class="module-card">
+
+                    <div class="module-icon orange-icon">
+                        🎭
+                    </div>
+
+                    <div class="module-status coming">
+                        COMING SOON
+                    </div>
+
+                    <h3>Deepfake Detection</h3>
+
+                    <p>
+                        Explore AI-powered verification of suspicious
+                        audio, video and digital media.
+                    </p>
+
+                    <button class="module-button disabled"
+                            disabled>
+                        Under Development
+                    </button>
+
+                </div>
+
+
+                <!-- HISTORY -->
+                <div class="module-card">
+
+                    <div class="module-icon green-icon">
+                        📊
+                    </div>
+
+                    <div class="module-status available">
+                        AVAILABLE
+                    </div>
+
+                    <h3>Scan History</h3>
+
+                    <p>
+                        Review your previous URL scans
+                        and their security analysis reports.
+                    </p>
+
+                    <button class="module-button"
+                            onclick="openHistory()">
+                        View History <span>→</span>
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- SECURITY FOOTER PANEL -->
+        <section class="security-banner">
+
+            <div class="security-banner-icon">
+                🛡️
+            </div>
+
+            <div>
+                <h3>Your Digital Safety Matters</h3>
+
+                <p>
+                    Always verify links before entering personal information.
+                    KavachX helps you identify potential online threats.
+                </p>
+            </div>
+
+        </section>
+
+
+        <!-- FOOTER -->
+        <footer class="dashboard-footer">
+            <p>© 2026 KavachX</p>
+
+            <p>
+                Multi-Modal AI-Driven Cybersecurity & Fraud Mitigation Platform
+            </p>
+        </footer>
+
+    </main>
+
+
+    <script src="dashboard.js"></script>
+
+</body>
+</html>

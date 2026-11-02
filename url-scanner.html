@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>KavachX | URL Scanner</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="url-scanner.css">
+</head>
+
+<body class="scanner-page">
+
+    <!-- TOP NAVBAR -->
+    <header class="scanner-navbar">
+
+        <div class="scanner-brand">
+            <span class="brand-shield">🛡️</span>
+            <h1>Kavach<span>X</span></h1>
+        </div>
+
+        <nav class="scanner-nav-links">
+            <button class="nav-dashboard"
+                onclick="window.location.href='dashboard.html'">
+                Dashboard
+            </button>
+
+            <button class="nav-logout" onclick="logout()">
+                Logout
+            </button>
+        </nav>
+
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="scanner-main">
+
+        <section class="scanner-heading">
+            <div class="scanner-icon">🔐</div>
+
+            <h2>URL Security Scanner</h2>
+
+            <p>
+                Detect suspicious URLs, phishing indicators
+                and potential online threats.
+            </p>
+        </section>
+
+        <!-- SCAN INPUT -->
+        <section class="scanner-input-card">
+
+            <label for="urlInput">Enter Website URL</label>
+
+            <div class="scanner-input-row">
+
+                <input
+                    type="text"
+                    id="urlInput"
+                    placeholder="https://example.com"
+                >
+
+                <button
+                    id="scanButton"
+                    onclick="scanURL()">
+                    Scan URL
+                </button>
+
+            </div>
+
+            <p class="scanner-note">
+                🛡️ KavachX will analyze the URL for suspicious indicators.
+            </p>
+
+        </section>
+
+        <!-- SCAN RESULT -->
+        <section id="scanResult" class="scanner-result">
+
+        </section>
+
+    </main>
+
+    <footer class="scanner-footer">
+        <p>🛡️ KavachX — Your Digital Security Companion</p>
+    </footer>
+
+    <!-- LOAD SCRIPTS ONLY ONCE -->
+    <script src="url-scanner.js"></script>
+    <script src="dashboard.js"></script>
+
+</body>
+</html>

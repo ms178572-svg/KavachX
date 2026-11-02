@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KavachX | Scan History</title>
+    <link rel="stylesheet" href="scan-history.css">
+</head>
+<body>
+
+    <header class="header">
+        <h1>🛡️ KavachX</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="scan-history.html" class="active">Scan History</a>
+        </nav>
+    </header>
+
+    <main class="container">
+
+        <section class="welcome">
+            <h2>Scan History Dashboard</h2>
+            <p>Monitor your previous URL security scans.</p>
+        </section>
+
+        <section class="stats">
+
+            <div class="stat-card">
+                <h3>Total Scans</h3>
+                <p id="totalScans">0</p>
+            </div>
+
+            <div class="stat-card safe">
+                <h3>Safe</h3>
+                <p id="safeScans">0</p>
+            </div>
+
+            <div class="stat-card suspicious">
+                <h3>Suspicious</h3>
+                <p id="suspiciousScans">0</p>
+            </div>
+
+            <div class="stat-card dangerous">
+                <h3>Dangerous</h3>
+                <p id="dangerousScans">0</p>
+            </div>
+
+        </section>
+
+        <section class="history-section">
+
+            <div class="history-heading">
+                <h2>Previous Scans</h2>
+                <button onclick="loadHistory()">↻ Refresh</button>
+            </div>
+
+            <div class="filter-controls">
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="🔍 Search scanned URL..."
+                >
+
+                <select id="statusFilter">
+                    <option value="All">All Status</option>
+                    <option value="Safe">Safe</option>
+                    <option value="Suspicious">Suspicious</option>
+                    <option value="Dangerous">Dangerous</option>
+                </select>
+
+                <select id="sortFilter">
+                    <option value="newest">Newest First</option>
+                    <option value="oldest">Oldest First</option>
+                    <option value="risk-high">Highest Risk</option>
+                    <option value="risk-low">Lowest Risk</option>
+                </select>
+
+            </div>
+
+            <div class="table-wrapper">
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Scanned URL</th>
+                            <th>Status</th>
+                            <th>Risk Score</th>
+                            <th>Date & Time</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="historyTable">
+                        <tr>
+                            <td colspan="5">Loading scan history...</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="scan-history.js"></script>
+
+</body>
+</html>
